@@ -28,7 +28,7 @@ h3 {
     color: var(--highlight-color);
 }
 
-/* Grid Visualisation CSS For Testing */
+/* Grid Visualisation CSS For Testing *//*
 .container,
 .row {
     border: 2px solid black;
