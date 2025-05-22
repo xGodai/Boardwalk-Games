@@ -22,7 +22,15 @@ h2,
 h3 {
     font-family: var(--secondary-font);
     color: var(--primary-color);
-    text-transform: uppercase;
+}
+
+h1,
+h2 {
+   text-transform: uppercase; 
+}
+
+h2 {
+    margin-bottom: 2rem;
 }
 
 .sub-heading-color{
@@ -32,7 +40,9 @@ h3 {
 .section {
     margin-top: 2rem;
     margin-bottom: 2rem;
+    
 }
+
 
 /* Navbar */
 
@@ -50,6 +60,18 @@ h3 {
     font-family: var(--secondary-font);
 }
 
+/*Services*/
+
+#services .card-footer {
+    font-weight: bold;
+    color: var(--highlight-color);
+    background-color: transparent;
+}
+
+#services .card {
+    margin-bottom: 1.5rem;
+}
+
 /* Grid Visualisation CSS For Testing *//*
 .container,
 .row {
@@ -59,4 +81,33 @@ h3 {
 .col-12 {
     border: 2px solid white;
     background-color: lightgray;
+}
+
+/*Medium Devices (Tablets <768px)*/
+@media screen and (min-width: 768px) {
+    /*Cards All Same Height*/
+    #services .card-body {
+        min-height: 200px;
+    }
+}
+/*Medium Devices (Tablets <992px) */
+@media screen and (min-width: 992px) {
+    /*Cards All Same Height*/
+    #services .card-body {
+        min-height: auto;
+    }
+}
+/* XL Devices (Large Desktops <1200px)*/
+@media screen and (min-width: 1200px) {
+    /*Cards All Same Height*/
+    #services .card-body {
+        min-height: 200px;
+    }
+}
+/* XXL Devices (Larger Desktops <1400px) */
+@media screen and (min-width: 1400px) {
+    /*Cards All Same Height*/
+    #services .card-body {
+        min-height: 200px;
+    }
 }
